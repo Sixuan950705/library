@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            {% block  title%}{% endblock %}
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid">
+            {% include "header.html" %}
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>相關推薦</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class='list-group'>
+                                <a href='/' class='list-group-item'>HOME</a>
+                                <a href='https://www.books.com.tw/products/0010832498?sloc=main' class='list-group-item'>天氣之子購書連結</a>
+                                <a href='https://www.books.com.tw/products/0010736051?sloc=main' class='list-group-item'>你的名字購書連結</a>
+                                <a href='https://www.books.com.tw/products/0010580898?sloc=main' class='list-group-item'>老人與海購書連結</a>
+                                <a href='https://www.books.com.tw/products/0010314544?sloc=main' class='list-group-item'>醜小鴨購書連結</a>
+                                <a href='https://www.books.com.tw/products/0010660414' class='list-group-item'>小王子購書連結</a>
+                                <a href='https://tw.news.yahoo.com/%E8%8C%B6%E7%A2%97%E8%92%B8%E5%A4%A7%E4%BA%82%E9%AC%A5%E5%88%BA%E9%9D%92%E7%94%B7%E8%B5%B7%E5%BA%95-2%E5%8E%9F%E5%9B%A0%E9%A2%A8%E5%90%91%E9%80%86%E8%BD%89-%E7%9B%AE%E6%93%8A%E8%80%85%E9%82%84%E5%8E%9F%E4%BA%8B%E7%99%BC%E7%B6%93%E9%81%8E-224508055.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAADciQa9gQVVWGshIzJa95RW4zzW1Re1L0FCPW0imS5EZsHAcejOqffPpGd9sFkGXuEvxLUZ4SiIIUoEPl2x8Ns_GOhIzjoSC56jo-_DSe_6TVSxEer5I_GzXE_pnUXiEPOXaThuFn_KnNuExA2-m5e6MPcS4PQrjGV8M35Rq9bKQ' class='list-group-item'>茶碗蒸新聞報導</a>
+                                <a href='https://www.youtube.com/watch?v=xr8PzQ7qntk' class='list-group-item'>茶碗蒸事件影片</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            {% block headmessage %} 
+                            {% endblock %}
+                        </div>
+                        <div class="card-body">
+                            {% block content %} {% endblock %}
+                        </div>
+                        <div class="card-footer">
+                            {% include 'footer.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
+    
